@@ -110,7 +110,7 @@ button {
 }
 
 .section {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 /* ----HEADER----- */
@@ -125,23 +125,40 @@ button {
   color: var(--logo-color-web);
   margin-right: 76px;
   display: flex;
+  padding: 24px 0;
 }
 
 .logo-web .logo-studio-dark {
   color: var(--logo-color-stuio-dark);
 }
 
-.logo-web .logo-studio-bright {
+.logo-web-footer .logo-studio-bright {
   color: var(--logo-color-stuio-bright);
+}
+
+.logo-web-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color-web);
+  padding: 24px 0;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.header-general {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .header-menu {
@@ -227,7 +244,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--hero-button-color);
-  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -241,7 +263,6 @@ button {
 .features-items {
   display: flex;
   gap: 24px;
-  padding-top: 120px;
   width: calc(100% - (3 * 24px) / 4);
 }
 
@@ -262,7 +283,6 @@ button {
 
 .products {
   display: flex;
-  margin-top: 72px;
   gap: 24px;
   width: calc(100% - (1 * 24px) / 2);
 }
@@ -275,6 +295,7 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--h2-color);
+  margin-bottom: 72px;
 }
 /* ------ TEAM  -----  */
 
@@ -284,6 +305,7 @@ button {
 
 .team-card {
   background-color: var(--primary-bg-color);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-name {
@@ -294,15 +316,17 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--h2-color);
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
   text-align: center;
-  width: calc(100% - (3 * 24px) / 4);
+}
+
+.card-content {
+  padding: 32px 16px;
 }
 
 .team-person-name {
@@ -311,13 +335,13 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--h3-color);
-  margin-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
 }
 
 .team-person-position {
   color: var(--primary-text-color);
-  margin-bottom: 32px;
+  text-align: center;
 }
 
 .portfolio-button {
@@ -383,11 +407,7 @@ button {
 .footer {
   color: var(--footer-color);
   background-color: var(--footer-bg-color);
-}
-
-.footer-position {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-text {
