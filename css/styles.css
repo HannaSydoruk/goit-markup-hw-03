@@ -170,12 +170,15 @@ button {
   gap: 40px;
 }
 
-.navigation {
+.navigation-general {
   display: flex;
   align-items: center;
   color: var(--navigation-color);
   font-weight: 500;
-  /* padding: 24px 0; */
+}
+
+.navigation {
+  padding: 24px 0;
 }
 
 .navigation a:hover,
