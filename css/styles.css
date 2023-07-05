@@ -171,10 +171,11 @@ button {
 }
 
 .navigation {
-  color: var(--navigation-color);
-  font-weight: 500;
   display: flex;
   align-items: center;
+  color: var(--navigation-color);
+  font-weight: 500;
+  /* padding: 24px 0; */
 }
 
 .navigation a:hover,
@@ -371,6 +372,13 @@ button {
 .portfolio-button:focus {
   color: var(--filter-text-active);
   background-color: var(--filter-bg-color-active);
+  border: 1px solid transparent;
+}
+
+.portolio-app {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-item-name {
@@ -379,8 +387,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--h2-color);
-  margin-top: 32px;
   text-align: left;
+  margin-bottom: 8px;
 }
 
 .portfolio-item {
@@ -407,10 +415,6 @@ button {
   gap: 48px 24px;
   justify-content: space-between;
 }
-
-/* .templates-items li {
-  border: 1px solid #e7e9fc;
-} */
 
 /* --------FOOTER -------  */
 
