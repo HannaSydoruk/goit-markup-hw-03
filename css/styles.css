@@ -265,6 +265,10 @@ button {
   width: calc(100% - (3 * 24px) / 4);
 }
 
+/* .features-items-width {
+  width: calc((100% - 72px) / 4);
+} */
+
 .features-name {
   font-weight: 500;
   font-size: 20px;
