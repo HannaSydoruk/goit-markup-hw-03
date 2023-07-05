@@ -284,7 +284,6 @@ button {
 
 .features {
   color: var(--primary-text-color);
-  padding-bottom: 0;
 }
 
 /* ------ PRODUCTS  -----  */
@@ -296,6 +295,10 @@ button {
 
 .products-items {
   width: calc((100% - 48px) / 3);
+}
+
+.about-general {
+  padding-bottom: 120px;
 }
 
 .about {
