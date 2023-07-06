@@ -61,6 +61,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -148,7 +149,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color-web);
-  padding: 24px 0;
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -161,8 +161,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .header-menu {
@@ -173,12 +171,13 @@ button {
 .navigation-general {
   display: flex;
   align-items: center;
-  color: var(--navigation-color);
-  font-weight: 500;
 }
 
 .navigation {
+  display: block;
   padding: 24px 0;
+  color: var(--navigation-color);
+  font-weight: 500;
 }
 
 .navigation a:hover,
@@ -227,10 +226,6 @@ button {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-  display: flex;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .hero-header {
@@ -318,8 +313,6 @@ button {
 
 .team {
   background-color: var(--team-bg-color);
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .team-card {
@@ -404,7 +397,10 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-top: 8px;
+}
+
+.item {
+  width: calc(100% - (8 * 24px)) / 9;
 }
 
 .templates {
@@ -412,16 +408,12 @@ button {
   gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
-  /* margin-top: 96px; */
 }
 
 .templates-items {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1128px;
   gap: 48px 24px;
-  justify-content: space-between;
 }
 
 /* --------FOOTER -------  */
@@ -430,11 +422,8 @@ button {
   color: var(--footer-color);
   background-color: var(--footer-bg-color);
   padding: 100px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .footer-text {
-  margin-top: 16px;
   max-width: 264px;
 }
