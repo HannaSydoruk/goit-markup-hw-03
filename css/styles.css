@@ -101,10 +101,6 @@ h3 {
   font-size: 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -180,9 +176,11 @@ button {
   font-weight: 500;
 }
 
-.navigation a:hover,
-.navigation a:focus {
+a:hover.navigation,
+a:focus.navigation,
+a:active.navigation {
   color: var(--navigation-color-active);
+  text-decoration: underline;
 }
 
 .navigation-link {
@@ -190,13 +188,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-}
-
-.navigation-link a:hover,
-.navigation-link a:focus,
-.navigation-link a:active {
-  color: var(--navigation-color-active);
-  text-decoration: underline;
 }
 
 .contacts {
